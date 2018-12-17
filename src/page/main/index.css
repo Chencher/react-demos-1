@@ -1,0 +1,29 @@
+.mainIndex {
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.mainIndex .h1 {font-size: 16px; font-weight: normal; line-height: 30px; border-bottom: solid 1px #ccc;}
+a{
+    
+}
+ul,li{
+    list-style-type: none;
+}
+.rdContent{
+    display: flex;
+    flex-direction: row;
+}
+.mainLeft{
+    width: 200px;
+    text-align: left;
+    border:solid 1px #ccc;
+    margin-left: 10px;
+}
+.mainRight{
+ border:solid 1px #ccc;
+ flex: 1;
+ margin-left: 10px;
+ margin-right: 10px;
+}
