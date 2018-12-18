@@ -9,7 +9,7 @@ import FollawIndex from '../page/follaw/index';
 import FollawComment from '../page/follaw/comment';
 import NotFound from '../page/none/not-found';
 import HelloTime from '../page/follaw/hello';
-
+import FollawTodos from '../page/follaw/todos';
 
 export default class ByRouter extends React.Component{
 
@@ -20,6 +20,8 @@ export default class ByRouter extends React.Component{
                             <Route path="/follaw" exact={true} component={FollawIndex}></Route>
                             <Route path="/follaw/time" exact={true} component={HelloTime}></Route>
                             <Route path="/follaw/comment" exact={true} component={FollawComment}></Route>
+                           <Route path="/follaw/todos" exact={true} component={FollawTodos}></Route>
+
                             </Switch>
                     </MainIndex>
             </BrowserRouter>

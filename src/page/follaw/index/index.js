@@ -17,6 +17,7 @@ export default class Index extends React.Component{
         <div className="links">
                 <Link to="follaw/comment">评论</Link>
                 <Link to="follaw/time">时间</Link>
+                <Link to="follaw/todos">任务清单</Link>
         </div>
         </div>
     }
