@@ -3,6 +3,15 @@
 记录一些使用过程中的感受和心得，以及自己的理解
 ```
 
+### 组件间交互
+```
+目前主要是涉及涉及到了兄弟组件、父子组件交互处理。状态维护都放在了父组件里，通过props进行数据的传递和事件的传递。
+当层级只有2层的时候处理起来还算轻松，如果是3层、4层就显得特别吃力，不是一种好的写法。
+导致父组件的代码会越来越多，组件传递过程也容易出错，而且工作量巨大。
+所以后面需要考虑使用redux，看是否能解决这个问题。
+```
+![Image text](https://raw.githubusercontent.com/bigerfe/react-demos/rd01/src/page/follaw/img/comsjh.png)
+
 
 ### 组件化
 ```
@@ -14,7 +23,8 @@
 下面是我做的一个demo，一个todolist，可以看到拆分的几个组件。
 感觉就是目录好多啊，不过感觉很清晰。
 ```
-![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+![Image text](https://raw.githubusercontent.com/bigerfe/react-demos/rd01/src/page/follaw/img/coms1.png)
+
 
 
 

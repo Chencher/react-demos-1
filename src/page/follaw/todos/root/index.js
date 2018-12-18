@@ -128,7 +128,7 @@ export default class Index extends React.Component {
     render() {
         console.log('root render');
         return <div className="follawTodosRoot">
-            <Title title="hello,e"></Title>
+            <Title title="hello"></Title>
             <AddTodo onTextChange={this.handleTextChange} onAddTodo={this.handleOnAddTodo} addTitle={this.state.addTitle}></AddTodo>
             <Tab tabs={TABS} onTabClick={this.handleTabClick} active={this.state.activeTabIndex}></Tab>
             <ItemList onItemOk={this.handleItemOk} todoList={this.state.todoList} activeTabIndex={this.state.activeTabIndex} onItemDelete={this.handleItemDelete} ></ItemList> 
