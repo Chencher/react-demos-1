@@ -4,7 +4,7 @@ import proptypes from 'prop-types';
 export default class Index extends React.Component {
 
     static defaultProps={
-        showText:'0'
+        showText:0
     }
 
     constructor(props) {
