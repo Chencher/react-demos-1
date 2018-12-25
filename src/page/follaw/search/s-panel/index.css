@@ -1,0 +1,22 @@
+.follawSearchSPanel{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    lett:0;right: 0;
+    background-color: #fff;
+    }
+
+        .follawSearchSPanel input{
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            width: 300px;
+    border-radius: 5px;
+    outline:none;
+        border:solid 1px #ccc;
+            }
+
+                .follawSearchSpanel .resultPanel{
+                    margin-top: 20px;
+                    text-align: left;
+                    }

@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import CommentInput from '../../../components/CommentInput/CommentInput';
-import CommentWraper from '../../../components/CommentWraper/CommentWraper';
+import CommentInput from './CommentInput/CommentInput';
+import CommentWraper from './CommentWraper/CommentWraper';
 
 const Input = CommentInput;
 

@@ -1,0 +1,17 @@
+.follawTodosTab{
+    
+    display: flex;
+    flex-direction: row;
+    }
+.follawTodosTab span{
+    cursor: pointer;
+    display: block;
+    border:solid 1px #ccc;
+        flex: 1;
+        height: 30px;
+        line-height: 30px;
+    }
+.follawTodosTab .active{
+    color: #fff;
+    background-color: blue;
+    }

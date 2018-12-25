@@ -1,7 +1,14 @@
 import React, { Component }  from 'react';
+import hiLoadNick from '../hi-loadnick';
+
 import './CommentInput.css';
 
-export default class CommentInput extends Component{
+ class CommentInput extends Component{
+
+    constructor(props){
+        super(props);
+        console.log(this.props);
+    }
 
     handleNickChange=(e)=>{
         this.props.onNickChange(e.target.value);
@@ -18,7 +25,7 @@ export default class CommentInput extends Component{
     render(){
         return <div className="CommentInputBox">
             <div className="CommentInputBoxRow">
-                <input type="text" palceholder="请输入昵称" value={this.props.nick} onChange={this.handleNickChange} />
+                <input type="text" palceholder="请输入昵称" value={this.props.saveNick || this.props.nick} onChange={this.handleNickChange} />
             </div>
             <div className="CommentInputBoxRow">
                 <textarea palceholder="请输入昵称" value={this.props.content} onChange={this.handleContentChange}></textarea>
@@ -30,3 +37,6 @@ export default class CommentInput extends Component{
     }
 
 }
+
+
+export default hiLoadNick(CommentInput,'nickname');
