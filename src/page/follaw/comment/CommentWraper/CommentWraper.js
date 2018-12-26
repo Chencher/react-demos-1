@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import CommentInput from '../CommentInput/CommentInput';
 import CommentList from '../CommentList/CommentList';
 
+
 import './CommentWraper.css';
 
 export default class CommentWraper extends Component{
@@ -31,7 +32,8 @@ export default class CommentWraper extends Component{
         console.log('hello',v);
         this.setState({
             submitNick:v
-        })
+        });
+        localStorage.setItem('nickname',v);
     }
 
     handleOnContentChange = (v)=>{
@@ -66,9 +68,11 @@ export default class CommentWraper extends Component{
     render(){
         console.log(this.props.children);
         let submitInfo = {nick:this.state.submitNick,content:this.state.submitContent};
+        let CInput=<CommentInput onSubmit={this.handleSubmitComment} {...submitInfo} onNickChange={this.handleOnNickChange} onContentChange={this.handleOnContentChange}/>;
+
         return <div className="CommentWraperBox">
         <h1> - 评论区 - </h1>
-            <CommentInput onSubmit={this.handleSubmitComment} {...submitInfo} onNickChange={this.handleOnNickChange} onContentChange={this.handleOnContentChange}/>
+            {CInput}
             <CommentList commentListArr={this.state.commentListArr}/>
         </div>
     }

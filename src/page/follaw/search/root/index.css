@@ -1,0 +1,8 @@
+.follawSearchRoot{
+    width: 750px;
+    border:solid 1px #ccc;
+    min-height: 400px;
+    margin:0 auto;
+        margin-top: 10px;
+        position: relative;
+    }
