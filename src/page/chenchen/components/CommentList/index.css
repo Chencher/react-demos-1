@@ -1,0 +1,6 @@
+.comment-list{
+    width: 80%;
+    margin: 20px auto;
+    max-height: 200px;
+    overflow: auto;
+}

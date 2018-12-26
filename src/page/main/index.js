@@ -19,7 +19,10 @@ export default class Index extends React.Component{
                 <div className="mainLeft">
                     <ul>
                     <li>
-                            <Link to="/follaw">Follaw Index</Link>
+                        <Link to="/follaw">Follaw Index</Link>
+                    </li>
+                    <li>
+                        <Link to="/chenchen">ChenChen Index</Link>
                     </li>
                     </ul>
                 </div>
