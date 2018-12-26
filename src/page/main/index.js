@@ -19,11 +19,20 @@ export default class Index extends React.Component{
                 <div className="mainLeft">
                     <ul>
                         <li>
+<<<<<<< HEAD
+                            <Link to="/follaw">Follaw Index</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <Link to="/qiao">Qiao Index</Link>
+=======
                                 <Link to="/follaw">Follaw Index</Link>
                         </li>
 
                         <li>
                                 <Link to="/ymk">YMK Index</Link>
+>>>>>>> 644d42a4e51153a9d3f06417869ffa58d357122d
                         </li>
                     </ul>
                 </div>
