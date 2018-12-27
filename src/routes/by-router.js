@@ -17,6 +17,7 @@ import YmkIndex from '../page/ymk/index';
 
 import QiaoIndex from '../page/qiao/index';
 import QiaoComment from '../page/qiao/comment/comment';
+import ToDoList from '../page/qiao/todolist/todolist';
 export default class ByRouter extends React.Component {
         render() {
                 return <BrowserRouter>
@@ -32,10 +33,10 @@ export default class ByRouter extends React.Component {
                                         <Route path="/follaw/click" exact={true} component={FollawClick}></Route>
 
                                         <Route path="/ymk" exact={true} component={YmkIndex}></Route>
-                                </Switch>
-                                <Switch>
+
                                         <Route path="/qiao" exact={true} component={QiaoIndex}></Route>
                                         <Route path="/qiao/comment" exact={true} component={QiaoComment}></Route>
+                                        <Route path="/qiao/todolist" exact={true} component={ToDoList}></Route>
                                 </Switch>
                         </MainIndex>
                 </BrowserRouter>

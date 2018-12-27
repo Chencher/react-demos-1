@@ -31,7 +31,6 @@ export default class CommentModule extends Component{
         })
     }
     handleTextareaChange=(e)=>{
-        console.log(e.target.value)
         this.setState({
             textareaValue:e.target.value
         })

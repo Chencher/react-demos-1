@@ -16,6 +16,7 @@ export default class Index extends React.Component{
         <h1>in qiao page.</h1>
         <div className="links">
                 <Link to="qiao/comment">评论</Link>
+                <Link to="qiao/todolist">ToDoList</Link>
         </div>
         </div>
     }

@@ -3,35 +3,35 @@
  */
 
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 
-export default class Index extends React.Component{
-    constructor(props){
+export default class Index extends React.Component {
+    constructor(props) {
         super(props);
     }
 
-    render(){
+    render() {
         return <div className="mainIndex">
             <h1 className="h1">rd 作业从这里开始!</h1>
             <div className="rdContent">
                 <div className="mainLeft">
                     <ul>
                         <li>
-                                <Link to="/follaw">Follaw Index</Link>
+                            <Link to="/follaw">Follaw Index</Link>
                         </li>
 
                         <li>
-                                <Link to="/ymk">YMK Index</Link>
+                            <Link to="/ymk">YMK Index</Link>
                         </li>
                         <li>
-                                <Link to="/qiao">Qiao Index</Link>
+                            <Link to="/qiao">Qiao Index</Link>
                         </li>
                     </ul>
                 </div>
                 <div className="mainRight">
-                {this.props.children}
+                    {this.props.children}
                 </div>
             </div>
         </div>
