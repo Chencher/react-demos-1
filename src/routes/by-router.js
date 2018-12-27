@@ -13,16 +13,11 @@ import HelloTime from '../page/follaw/hello';
 import FollawTodos from '../page/follaw/todos';
 import FollawSearch from '../page/follaw/search';
 import FollawClick from '../page/follaw/click';
-import YmkIndex from '../page/ymk/index'
+import YmkIndex from '../page/ymk/index';
 
 import QiaoIndex from '../page/qiao/index';
 import QiaoComment from '../page/qiao/comment/comment';
-
-<<<<<<< HEAD
-
-
 export default class ByRouter extends React.Component {
-
         render() {
                 return <BrowserRouter>
                         <MainIndex>
@@ -30,9 +25,13 @@ export default class ByRouter extends React.Component {
                                         <Route path="/follaw" exact={true} component={FollawIndex}></Route>
                                         <Route path="/follaw/time" exact={true} component={HelloTime}></Route>
                                         <Route path="/follaw/comment" exact={true} component={FollawComment}></Route>
+                                        {/* <Route path="/ymk/time" exact={true} component={HelloTime}></Route>
+                            <Route path="/ymk/comment" exact={true} component={FollawComment}></Route> */}
                                         <Route path="/follaw/todos" exact={true} component={FollawTodos}></Route>
                                         <Route path="/follaw/search" exact={true} component={FollawSearch}></Route>
                                         <Route path="/follaw/click" exact={true} component={FollawClick}></Route>
+
+                                        <Route path="/ymk" exact={true} component={YmkIndex}></Route>
                                 </Switch>
                                 <Switch>
                                         <Route path="/qiao" exact={true} component={QiaoIndex}></Route>
@@ -41,25 +40,4 @@ export default class ByRouter extends React.Component {
                         </MainIndex>
                 </BrowserRouter>
         }
-=======
-    render(){
-        return <BrowserRouter>
-                    <MainIndex>
-                            <Switch>
-                            <Route path="/follaw" exact={true} component={FollawIndex}></Route>
-                            <Route path="/follaw/time" exact={true} component={HelloTime}></Route>
-                            <Route path="/follaw/comment" exact={true} component={FollawComment}></Route>
-                            {/* <Route path="/ymk/time" exact={true} component={HelloTime}></Route>
-                            <Route path="/ymk/comment" exact={true} component={FollawComment}></Route> */}
-                           <Route path="/follaw/todos" exact={true} component={FollawTodos}></Route>
-                                <Route path="/follaw/search" exact={true} component={FollawSearch}></Route>
-                    <Route path="/follaw/click" exact={true} component={FollawClick}></Route>
-
-                    <Route path="/ymk" exact={true} component={YmkIndex}></Route>
-                            </Switch>
-                    </MainIndex>
-            </BrowserRouter>
-    }
->>>>>>> 644d42a4e51153a9d3f06417869ffa58d357122d
-
 }
