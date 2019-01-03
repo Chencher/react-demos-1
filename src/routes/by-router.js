@@ -9,6 +9,7 @@ import FollawIndex from '../page/follaw/index';
 import FollawComment from '../page/follaw/comment';
 import ChenChenComment from '../page/chenchen/comment';
 import ChenChenIndex from '../page/chenchen/index';
+import ChenChenTodos from '../page/chenchen/todos';
 import NotFound from '../page/none/not-found';
 import HelloTime from '../page/follaw/hello';
 
@@ -28,6 +29,7 @@ export default class ByRouter extends React.Component{
                             <Route path="/follaw/comment" exact={true} component={FollawComment}></Route>
                             <Route path="/chenchen" exact={true} component={ChenChenIndex}></Route>
                             <Route path="/chenchen/comment" exact={true} component={ChenChenComment}></Route>
+                            <Route path="/chenchen/todos" exact={true} component={ChenChenTodos}></Route>
                             {/* <Route path="/ymk/time" exact={true} component={HelloTime}></Route>
                             <Route path="/ymk/comment" exact={true} component={FollawComment}></Route> */}
                             <Route path="/follaw/todos" exact={true} component={FollawTodos}></Route>

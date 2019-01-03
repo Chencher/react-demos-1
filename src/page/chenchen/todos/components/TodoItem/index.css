@@ -1,0 +1,53 @@
+.item{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.item-index{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fb5000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -20px;
+}
+.item-content{
+    height: 35px;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 0 10px 10px 0;
+    z-index: -1;
+}
+.item-text{
+    padding: 0 60px;
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.finished{
+    background: #fb5000;
+    color: #ffffff;
+    width: 45px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.delete{
+    background: #008afb;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.item-finished{
+    text-decoration: line-through;
+}

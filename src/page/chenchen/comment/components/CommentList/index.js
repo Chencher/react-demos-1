@@ -9,7 +9,7 @@ export default class CommentList extends React.Component {
 
     drawList = () => {
         return this.props.commentList.map((item) => {
-            return <CommentItem item={item}></CommentItem>
+            return <CommentItem item={item} key={item.time}></CommentItem>
         })
     }
 

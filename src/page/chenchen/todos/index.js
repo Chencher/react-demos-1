@@ -3,13 +3,14 @@
  */
 
 import React from 'react';
-import ComponentWrap from './components/CommentIWrap';
+import Todolist from './components/TodolList';
+import './index.css';
 
 export default class App extends React.Component {
     render() {
         return <div>
-            <h1>评论区</h1>
-            <ComponentWrap />
+            <h1>任务列表</h1>
+            <Todolist />
         </div>
     }
 }
