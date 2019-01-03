@@ -42,22 +42,25 @@ export default class TodoInput extends React.Component {
     }
 
     addTask = () => {
-        this.props.addTask(this.state.newTask, new Date());
+        this.props.addTask(this.state.newTask, new Date().getTime());
+        this.setState({
+            state: 'none'
+        })
     }
 
     render() {
         return <div className="top">
             <div className="btn-group">
                 <button className="add" onClick={this.add} disabled={!this.state.state === 'add'}>新增</button>
-                <button className="search" onClick={this.search} disabled={!this.state.state === 'search'}>查询</button>
+                {/* <button className="search" onClick={this.search} disabled={!this.state.state === 'search'}>查询</button> */}
             </div>
             {this.state.state === 'add' ? <div className="add-input">
                 <input onChange={this.addItem} placeholder="输入新增任务" val={this.state.newTask}></input>
                 <button onClick={this.addTask}>确定</button>
             </div> : null}
-            {this.state.state === 'search' ? <div className="search-input">
+            {/* {this.state.state === 'search' ? <div className="search-input">
                 <input onChange={this.searchItem} placeholder="输入查询任务" val={this.state.taskName}></input>
-            </div> : null}
+            </div> : null} */}
         </div>
     }
 }

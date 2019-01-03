@@ -1,6 +1,7 @@
 .item{
     display: flex;
-    width: 80%;
+    width: 30%;
+    min-width: 510px;
     margin: 0 auto;
     justify-content: flex-start;
     margin-bottom: 10px;

@@ -11,6 +11,9 @@ a{
 ul,li{
     list-style-type: none;
 }
+a{
+    text-decoration:none;
+}
 .rdContent{
     display: flex;
     flex-direction: row;
@@ -21,6 +24,10 @@ ul,li{
     border:solid 1px #ccc;
     margin-left: 10px;
 }
+.mainLeft ul li{
+    margin-top:20px;
+}
+
 .mainRight{
  border:solid 1px #ccc;
  flex: 1;

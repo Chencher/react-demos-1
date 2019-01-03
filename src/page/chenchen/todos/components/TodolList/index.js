@@ -14,9 +14,10 @@ export default class TodoList extends React.Component {
         }
     }
 
+    //key为时间戳id
     addToList = (val, key) => {
         let taskList = JSON.parse(localStorage.getItem('taskList')) || [];
-        taskList.unshift({content: val, state: 'new', key});
+        taskList.unshift({content: val, state: 'new', id: key});
         localStorage.setItem('taskList', JSON.stringify(taskList));
         console.log(val);
         this.setState({
@@ -29,6 +30,7 @@ export default class TodoList extends React.Component {
         let index = taskList.findIndex((item) => {
             return item.id === id;
         });
+        if(index < 0) return;
         taskList[index].state = 'finished';
         localStorage.setItem('taskList', JSON.stringify(taskList));
         this.setState({
@@ -50,7 +52,7 @@ export default class TodoList extends React.Component {
 
     renderTaskList = () => {
         return this.state.taskList.map((item, index) => {
-            return <TodoItem content={item} index={index + 1} key={item.key} finishedTask={this.finished} deleteTask={this.delete} />
+            return <TodoItem content={item} index={index + 1} key={item.id} finishedTask={this.finished} deleteTask={this.delete} />
         });
     }
 

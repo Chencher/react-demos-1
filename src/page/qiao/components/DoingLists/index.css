@@ -1,0 +1,14 @@
+.ding-things{
+    margin-left:210px; 
+    width:600px;
+    height: 60px;
+    line-height: 60px;
+}
+.ding-title{
+    float: left;
+    font-size:26px;
+    font-weight: 900;
+}
+.todo-count{
+    float: right;
+}
