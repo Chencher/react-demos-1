@@ -9,9 +9,9 @@ class Add extends  Component{
             <div className="add">
                 <div className="inputWrap">
                     <span className="username">用户名</span>
-                    <input type="text"/>
+                    <input type="text" placeholder="请输入昵称"/>
                 </div>
-                <textarea className="content" cols="30" rows="10"></textarea>
+                <textarea className="content" cols="30" rows="10"placeholder="请输入评论"></textarea>
                 <div className="submitBtn">提交</div>
             </div>
         )
