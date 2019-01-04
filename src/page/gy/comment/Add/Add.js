@@ -6,7 +6,7 @@ class Add extends  Component{
 
     render(){
         return(
-            <div>
+            <div className="add">
                 <div className="inputWrap">
                     <span className="username">用户名</span>
                     <input type="text"/>

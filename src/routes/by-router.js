@@ -20,6 +20,9 @@ import YmkIndex from '../page/ymk/index';
 import QiaoIndex from '../page/qiao/index';
 import QiaoComment from '../page/qiao/comment/comment';
 import ToDoList from '../page/qiao/todolist/todolist';
+import GyIndex from '../page/gy/index';
+import GyComment from '../page/gy/comment';
+import GyTodoList from '../page/gy/todolist';
 export default class ByRouter extends React.Component{
 
     render(){
@@ -43,6 +46,9 @@ export default class ByRouter extends React.Component{
                             <Route path="/qiao" exact={true} component={QiaoIndex}></Route>
                             <Route path="/qiao/comment" exact={true} component={QiaoComment}></Route>
                             <Route path="/qiao/todolist" exact={true} component={ToDoList}></Route>
+                            <Route path="/gy" exact={true} component={GyIndex}></Route>
+                            <Route path="/gy/comment" exact={true} component={GyComment}></Route>
+                            <Route path="/gy/todolist" exact={true} component={GyTodoList}></Route>
                             </Switch>
                     </MainIndex>
             </BrowserRouter>

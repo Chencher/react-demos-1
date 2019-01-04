@@ -1,18 +1,14 @@
-.Wrap{
-    margin: 100px auto;
-    width: 750px;
+.wrap{
     height: 500px;
-    background-color: #bfa;
 }
-.title{
-    width: 100%;
+.wrap .title{
     height: 100px;
-    background: pink;
     font-size: 50px;
     text-align: center;
     line-height: 100px;
+    background-color: #fff !important;
 }
-.componentWrap{
+.wrap .componentWrap{
     display: flex;
     justify-content: space-between;
 }
