@@ -9,9 +9,6 @@ class Index extends React.Component {
         super(props);
     }
 
-    shouldComponentUpdate(pre,now){
-        return false;
-    }
 
     render() {
         console.log('coms btn srender');
@@ -29,12 +26,13 @@ function mapState(state,ownProps){
     }
 }
 
-function mapDispatch(dispatch,ownProps){
-    console.log('mapdispatch',ownProps);
+function mapDispatch(dispatch){
     return {
         add:(cc)=>{
             console.log('cc',cc);
-            dispatch(increment(ownProps));
+            dispatch(increment({
+                name:1010
+            }));
         }
     }
 }

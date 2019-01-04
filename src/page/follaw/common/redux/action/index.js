@@ -1,3 +1,3 @@
 
 export const IncrementAdd = 'add';
-export const increment = (addAction)=>({type:IncrementAdd,addAction});
+export const increment = (data={})=>({type:IncrementAdd,data});
