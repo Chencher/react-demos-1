@@ -1,0 +1,13 @@
+.follawIndex{
+    text-align: center;
+    font-size: 16px;}
+
+.follawIndex .links{
+    display: flex;
+    flex-direction: row;
+    }
+    
+    .follawIndex .links a{
+        margin-left: 10px;
+        line-height: 30px;
+    }

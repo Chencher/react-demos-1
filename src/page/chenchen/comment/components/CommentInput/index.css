@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.form .input{
+    height: 50px;
+}
+.form .input, .form .textarea{
+    margin-bottom: 20px;
+}
+.form .button{
+    background: #F85D00;
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    width: 150px;
+}

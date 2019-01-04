@@ -1,0 +1,31 @@
+.title{
+    width:1024px;
+    height:60px;
+    line-height: 60px;
+    margin-top:30px;
+    font-size: 30px;
+    text-align: center;
+}
+.user-name{
+    margin-left:30px;
+}
+.user-nick{
+    margin-left:10px;
+    display: inline-block;
+    width:300px;
+    height:30px;
+    outline: none;
+}
+.comment-text{
+    display: inline-block;
+    width: 600px;
+    height: 300px;
+    margin-left:90px;
+    margin-top:30px;
+    outline: none;
+}
+.submit{
+    display: block;
+    margin-left:90px;
+    margin-top:10px;
+}
