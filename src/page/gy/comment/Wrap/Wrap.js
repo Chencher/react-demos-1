@@ -1,4 +1,4 @@
-import React, {Component} from 'React';
+import React, {Component} from 'react';
 import Add from '../Add/Add';
 import List from '../List/List';
 import './Wrap.css';
