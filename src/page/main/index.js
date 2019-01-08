@@ -30,6 +30,9 @@ export default class Index extends React.Component {
                     <li>
                         <Link to="/qiao">Qiao Index</Link>
                     </li>
+                    <li>
+                        <Link to="/gy">Gy Index</Link>
+                    </li>
                     </ul>
                 </div>
                 <div className="mainRight">
