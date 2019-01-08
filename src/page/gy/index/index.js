@@ -9,7 +9,7 @@ class Index extends Component{
             <div>
                 <h2>gy's page</h2>
                 <Link to="gy/comment">评论</Link><br/>
-                <Link to="gy/todolist">任务清单</Link>
+                <Link to="gy/todolist">备忘录</Link>
             </div>
         )
     }

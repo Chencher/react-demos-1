@@ -26,3 +26,15 @@
     background-color: cornflowerblue;
     border-radius: 5px;
 }
+.todoItem .show{
+    display: block;
+}
+.todoItem .hidden {
+    display: none;
+}
+.todoItem .done{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('http://c2.xinstatic.com/f3/20180416/1840/5ad47da23e2e4430972.png') no-repeat center center / 80%;
+}
