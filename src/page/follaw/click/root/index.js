@@ -7,10 +7,10 @@ class Index extends React.Component{
 
     constructor(props){
         super(props);
-        console.log('click/root/index',this.props);
     }
 
     render(){
+        console.log('click root render');
         return <div>
         <Btns tips="点击按钮有惊喜"></Btns>
             <Texts showText={this.props.count}></Texts>
@@ -22,7 +22,7 @@ class Index extends React.Component{
 
 function mapState(state) {
     return {
-        count:state.count
+        count:state.numAdd.count
     }
 }
 

@@ -20,6 +20,8 @@ import YmkIndex from '../page/ymk/index';
 import QiaoIndex from '../page/qiao/index';
 import QiaoComment from '../page/qiao/comment/comment';
 import ToDoList from '../page/qiao/todolist/todolist';
+import FollawChangeColor from '../page/follaw/change-color';
+
 export default class ByRouter extends React.Component{
 
     render(){
@@ -29,6 +31,7 @@ export default class ByRouter extends React.Component{
                             <Route path="/follaw" exact={true} component={FollawIndex}></Route>
                             <Route path="/follaw/time" exact={true} component={HelloTime}></Route>
                             <Route path="/follaw/comment" exact={true} component={FollawComment}></Route>
+                                <Route path="/follaw/changecolor" exact={true} component={FollawChangeColor}></Route>
                             <Route path="/chenchen" exact={true} component={ChenChenIndex}></Route>
                             <Route path="/chenchen/comment" exact={true} component={ChenChenComment}></Route>
                             <Route path="/chenchen/todos" exact={true} component={ChenChenTodos}></Route>
