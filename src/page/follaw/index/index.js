@@ -20,6 +20,7 @@ export default class Index extends React.Component{
                 <Link to="follaw/todos">任务清单</Link>
                 <Link to="follaw/search">搜索</Link>
                 <Link to="follaw/click">点击</Link>
+                <Link to="follaw/changecolor">改变颜色</Link>
         </div>
         </div>
     }

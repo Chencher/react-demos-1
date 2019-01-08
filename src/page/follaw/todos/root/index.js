@@ -28,6 +28,7 @@ const STATE={
 let todoDb={
     key:'todolist_save',
     save:function(data){
+        console.log(data);
         localStorage.setItem(this.key,JSON.stringify(data||[]));
     },
     get:function(){

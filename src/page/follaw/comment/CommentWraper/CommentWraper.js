@@ -9,7 +9,7 @@ export default class CommentWraper extends Component{
 
     constructor(props){
         super(props);
-
+        console.log('dfdsfadfadsf');
         this.state = {
             commentListArr:this.getData(),//评论列表
             submitNick:'',
