@@ -2,8 +2,8 @@
  * reducer集合
  */
 
-import changeColorReducer from '../../change-color/redux/reducer';
-import clickAddNumReduceer from '../../click/reducer';
+import changeColorReducer from '../../follaw/change-color/redux/reducer';
+import clickAddNumReduceer from '../..//follaw/click/reducer';
 
 import { combineReducers } from 'redux';
 

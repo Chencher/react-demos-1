@@ -6,7 +6,7 @@ import RootRoute from './routes/by-router';
 // import App from './page/gy/comment/App/App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
-import store from './page/follaw/root-redux/store';
+import store from './page/root-redux/store';
 
 
 ReactDOM.render(<Provider store={store}>
